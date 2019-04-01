@@ -12,6 +12,7 @@ use Symfony\Component\Workflow\MarkingStore\SingleStateMarkingStore;
 use Symfony\Component\Workflow\Registry;
 use Symfony\Component\Workflow\StateMachine;
 use Symfony\Component\Workflow\Workflow;
+use Twig\Loader\ArrayLoader;
 
 class WorkflowServiceProviderTest extends TestCase
 {
@@ -39,7 +40,7 @@ class WorkflowServiceProviderTest extends TestCase
         $app->register(new WorkflowServiceProvider());
         $app->boot();
 
-        $this->assertInstanceOf(WorkflowExtension::class,  $app['twig']->getExtension('workflow'));
+        $this->assertInstanceOf(WorkflowExtension::class, $app['twig']->getExtension(WorkflowExtension::class));
     }
 
     public function testRegisterSingleStateWorkflow()
@@ -81,7 +82,7 @@ class WorkflowServiceProviderTest extends TestCase
         $app = new Application();
 
         $app['twig'] = function () {
-            return new \Twig_Environment();
+            return new \Twig_Environment(new ArrayLoader());
         };
 
         return $app;
