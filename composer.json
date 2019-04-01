@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "silex/silex": "^2.0",
-        "symfony/workflow": "^3.2"
+        "silex/silex": "^2.3",
+        "symfony/workflow": "^4"
     },
     "suggest": {
         "symfony/twig-bridge": "For using Symfony Twig helper functions"
@@ -22,6 +22,6 @@
     "minimum-stability": "dev",
     "require-dev": {
         "phpunit/phpunit": "^5.0",
-        "symfony/twig-bridge": "^3.2"
+        "symfony/twig-bridge": "^4"
     }
 }
