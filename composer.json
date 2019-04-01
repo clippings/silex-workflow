@@ -1,5 +1,5 @@
 {
-    "name": "angyvolin/silex-workflow",
+    "name": "clippings/silex-workflow",
     "description": "Silex service provider for symfony/workflow component",
     "keywords": [ "WorkflowServiceProvider", "workflow", "pimple", "silex", "silex 2" ],
     "license": "MIT",

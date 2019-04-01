@@ -8,10 +8,10 @@ Silex 2.* service provider for Symfony Workflow component.
 The Workflow component provides tools for managing a workflow or finite state machine. [symfony/workflow](https://github.com/symfony/workflow) was introduced in Symfony 3.2.
 
 ## Installation
-`composer require angyvolin/silex-worflow`
+`composer require clippings/silex-worflow`
 
 > To be able to use twig helpers you also require a [symfony/twig-bridge](https://github.com/symfony/twig-bridge) package:
-> 
+>
 > `composer require symfony/twig-bridge`
 
 ## Configuration
