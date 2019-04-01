@@ -23,5 +23,8 @@
     "require-dev": {
         "phpunit/phpunit": "^5.0",
         "symfony/twig-bridge": "^4"
+    },
+    "replace": {
+        "angyvolin/silex-workflow": "self.version"
     }
 }
