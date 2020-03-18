@@ -112,7 +112,7 @@ class WorkflowServiceProvider implements ServiceProviderInterface, BootableProvi
 
             $app->extend('workflow.registry', function (Registry $registry, Container $app) use ($workflow, $workflowId) {
                 foreach ($workflow['supports'] as $supportedClass) {
-                    $registry->add($app[$workflowId], $supportedClass);
+                    $registry->addWorkflow($app[$workflowId], $supportedClass);
                 }
 
                 return $registry;
